@@ -17,6 +17,7 @@ public abstract class  JobField {
         this.value = value;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,7 +28,7 @@ public abstract class  JobField {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, value);
+        return value.hashCode();
     }
 
     @Override
